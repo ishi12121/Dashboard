@@ -4,21 +4,21 @@ import FlexBetween from "@/components/FlexBetween";
 import { useGetKpisQuery, useGetProductsQuery } from "@/state/api";
 import { Box, Typography, useTheme } from "@mui/material";
 import React, { useMemo } from "react";
-// import {
-//   Tooltip,
-//   CartesianGrid,
-//   LineChart,
-//   ResponsiveContainer,
-//   XAxis,
-//   YAxis,
-//   Line,
-//   PieChart,
-//   Pie,
-//   Cell,
-//   ScatterChart,
-//   Scatter,
-//   ZAxis,
-// } from "recharts";
+import {
+  Tooltip,
+  CartesianGrid,
+  LineChart,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+  Line,
+  PieChart,
+  Pie,
+  Cell,
+  ScatterChart,
+  Scatter,
+  ZAxis,
+} from "recharts";
 
 const pieData = [
   { name: "Group A", value: 600 },
@@ -66,7 +66,7 @@ const Row2 = () => {
           title="Operational vs Non-Operational Expenses"
           sideText="+4%"
         />
-        {/* <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="100%">
           <LineChart
             data={operationalExpenses}
             margin={{
@@ -197,7 +197,7 @@ const Row2 = () => {
               fill={palette.tertiary[500]}
             />
           </ScatterChart>
-        </ResponsiveContainer> */}
+        </ResponsiveContainer>
       </DashboardBox>
     </>
   );
